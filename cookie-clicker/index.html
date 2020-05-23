@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1cf94312e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title><i class="fas fa-cookie-bite"></i>  Cookie clicker</title>
+</head>
+<body>
+
+<main role="main">
+    
+    <section id="bakery">
+        <div class="bakery-background-container">
+
+        </div>
+        <header>
+            <h1>The bakery</h1>
+        </header>
+        <section id="score">
+            <h2 id="numberOfCookies" data-number_of_cookies ="0" > number of cookies</h2>
+            <p id="perSecond"></p>
+            <p id="countdown" data-timerRunning=false></p>
+        </section>
+        <section id="cookie-section">
+            <button id="increment-btn">
+               <img src="https://media.giphy.com/media/Z0lWsgfBeuv60/giphy.gif">
+            </button>
+            <p>Click me to make more cookies</p>
+        </section>
+        <section id="bought-section">
+            <h3>Bought items</h3>
+            <table>
+                <tr id="itemsList">
+                    <th><img src="img/cookie.png" alt="multiplier"></th>
+                    <th><img src="img/granny.png" alt="granny"></th>
+                    <th><img src="img/cookieBonus.png" alt="bonus"></th>   
+                </tr>
+                <tr id="frequencyItems">
+                    <td id="multiplierFrequency" data-number_of_multiplier="0">0</td>
+                    <td id="grannyFrequency"
+                    data-number_of_granny="0">0</td>
+                   <td id="bonusFrequency"
+                   data-number_of_bonus="0">0</td>
+                </tr>
+            </table>
+        </section>
+    </section>
+
+    <section id="store">
+        <header>
+            <h1>The Store</h1>
+        </header>
+        <div class="store-background-container">
+
+        </div>
+        <section id="store-items">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="multiplier-button">
+                            <img src="img/cookie.png">
+                        </button>
+                    </td>
+                    <td id="multiplierPriceSetting" data-multiplier_price="20">20 cookies</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="granny-button">
+                            <img src="img/granny.png" alt="granny">
+                        </button>
+                    <td id="grannyPriceSetting" data-granny_price="20">20 cookies</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="bonus-button">
+                            <img src="img/cookieBonus.png">
+                        </button>
+                    <td id="bonusPriceSetting" data-bonus_price="20">20 cookies</td>
+                </tr>
+
+            </table>
+           
+           
+        </section>
+    </section>
+</main> 
+<script src="script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,117 @@
+
+main{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+h1{
+    font-size: 2em;
+}
+
+#bakery, #store{
+    width: 40vw;
+    height: 100vh;
+    border: 3px solid #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.bakery-background-container{
+    position: absolute;
+    width:inherit;
+    height: inherit;
+    background-image: url(img/bakery.jpg);
+    background-position: stretch;
+    background-size:cover;
+    opacity: 0.5;
+    z-index: -1;
+ 
+}
+
+
+#bakery{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   
+   
+}
+
+#bakery h1{
+    z-index: 4;
+}
+
+
+#cookie-section button{
+    background-color: transparent;
+    border-radius: 4em;
+
+}
+
+#cookie-section img{
+    width: 100%;
+    border-radius: 4em;
+}
+
+#cookie-section p{
+    text-align: center;
+    font-size: 1em;
+    margin: 0vh;
+}
+
+#countdown {
+   font-size: 1.5em;
+   text-align: center;
+   margin-bottom: 1vh;
+   border: 1px solid #413d3d8a;
+   border-radius: 10em;
+}
+
+#bought-section {
+    font-size: 1.5em;
+}
+
+#bought-section h3 {
+   margin-bottom: 0;
+}
+
+#bought-section img {
+    width: 11vw;
+}
+
+#bought-section table tr{
+    border: 1px solid rgba(73, 71, 71, 0.384);
+    border-radius:0.5em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* store side */
+
+.store-background-container{
+    position: absolute;
+    width:inherit;
+    height: inherit;
+    background-image: url(img/store.jpg);
+    background-position: stretch;
+    background-size:cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#store button{
+    background-color:transparent;
+    border-radius: 2em;
+}
+
+#store img{
+    width: 11vw;
+}
+
