@@ -53,9 +53,10 @@ function buyMultiplier (){
       /* readjusting cookies value */
       h2Cookies.dataset.number_of_cookies-=parseInt(multiplierPriceSetting.dataset.multiplier_price);
       h2Cookies.innerHTML = `number of cookies: ${h2Cookies.dataset.number_of_cookies}`;
-      multiplierItem.dataset.number_of_multiplier = parseInt(multiplierItem.dataset.number_of_multiplier)+1;
+    //   multiplierItem.dataset.number_of_multiplier = parseInt(multiplierItem.dataset.number_of_multiplier)+1;
         /*
-            ! multiplierItem.dataset.number_of_multiplier = parseInt(multiplierItem.dataset.number_of_multiplier)++; 
+            // ! multiplierItem.dataset.number_of_multiplier = parseInt(multiplierItem.dataset.number_of_multiplier)++; 
+            ? eerst in variable steken en dan kan dit wel zonder problemen 
         */   
       increment();
       /* display in bought sections bought item */
